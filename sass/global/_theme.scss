@@ -54,7 +54,7 @@ $font-sizes: (
   }
 
   --color-anchor: #{$link-color};
-  --font-family: "Baloo 2",
+  --font-family: "BEARPAW_", "Montserrat",
   sans-serif;
   --font-weight-strong: #{$font-weight-strong};
 
@@ -64,3 +64,4 @@ $font-sizes: (
 
   --border-radius: #{$border-radius};
 }
+

@@ -14,10 +14,14 @@ header {
   text-align: center;
 
   h1 {
+
     @include logomark;
+    font-family: 'BEARPAW_', san-serif;
+    font-size: var(--font-size-h1);
   }
 
   h2 {
+    font-family: 'Montserrat', serif;
     max-width: 30ch;
   }
 }

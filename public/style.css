@@ -29,7 +29,9 @@ body {
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+  background: url('mountains.jpg') no-repeat center center fixed;
+  background-size: cover;}
 
 /* Make images easier to work with */
 img {
@@ -58,7 +60,7 @@ select {
   --color-text: #2f2e35;
   --color-light: #fff;
   --color-anchor: #413C50;
-  --font-family: "Baloo 2",
+  --font-family: "Montserrat",
   sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
