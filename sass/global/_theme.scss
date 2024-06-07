@@ -32,7 +32,7 @@ $colors: map-merge($brand-colors,
 $link-color: color(primary) !default;
 $border-radius: 8px !default;
 
-$font-heading: 'Playfair Display', serif;
+$font-heading: 'Bearpaw Regular', serif;
 $font-body: 'Montserrat', sans-serif;
 
 $font-weight-strong: 500 !default;
@@ -57,8 +57,8 @@ $font-sizes: (
   }
 
   --color-anchor: #{$link-color};
-  --font-family: "Bearpaw Regular", "Montserrat",
-  sans-serif;
+  --font-family-heading: #{$font-heading};
+  --font-family-body: #{$font-body};
   --font-weight-strong: #{$font-weight-strong};
 
   @each $key, $size in $font-sizes {

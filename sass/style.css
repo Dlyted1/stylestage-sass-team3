@@ -59,8 +59,10 @@ select {
   }
 }
 @font-face {
-  font-family: "BEARPAW_";
-  src: url("/public/BEARPAW_.ttf");
+  font-family: "Bearpaw Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bearpaw Regular"), url("BEARPAW_.woff") format("woff");
 }
 :root {
   --color-primary: #413C50;
@@ -70,8 +72,8 @@ select {
   --color-text: #2f2e35;
   --color-light: #fff;
   --color-anchor: #413C50;
-  --font-family: "Baloo 2",
-  sans-serif;
+  --font-family-heading: Bearpaw Regular, serif;
+  --font-family-body: Montserrat, sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;
   --font-size-h2: 3rem;
@@ -91,20 +93,19 @@ h4 {
 }
 
 h1 {
-  font-family: var(--heading-Font);
+  font-family: var(--font-heading);
   font-size: var(--font-size-h1);
   font-size: clamp(2rem, 7vw, var(--font-size-h1));
 }
 
 h2 {
-  font-family: var(--body-Font);
+  font-family: var(--font-body);
   font-size: var(--font-size-h2);
   font-size: clamp(2rem, 4vw, var(--font-size-h2));
   text-align: center;
 }
 
 #main h2 {
-  font-family: "BEARPAW_", serif;
   background-color: var(--color-secondary);
   align-self: center;
   color: var(--color-background);
@@ -612,7 +613,7 @@ blockquote::after {
 body {
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: var(--body-Font);
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
@@ -677,8 +678,11 @@ header h1 {
   border: 0.16em solid var(--color-primary);
   box-shadow: 0.12em 0.12em var(--color-secondary);
   place-content: center;
+  font-family: "Bearpaw Regular", san-serif;
+  font-size: var(--font-size-h1);
 }
 header h2 {
+  font-family: "Montserrat", serif;
   max-width: 30ch;
 }
 
