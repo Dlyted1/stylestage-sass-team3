@@ -1,10 +1,18 @@
+
 // stylelint-disable no-descending-specificity
-body {
-  background-color: var(--color-background);
+
+ body {
+   /*  background-color: $color-background; */
+  background-image: url(images/mountains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--color-text);
   font-family: 'Montserrat', sans-serif;
   
 }
+
 
 main {
   padding-top: 5vh;
@@ -17,6 +25,7 @@ main {
   h3 {
     color: var(--color-primary);
   }
+
 }
 
 article {

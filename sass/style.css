@@ -62,7 +62,7 @@ select {
   font-family: "Bearpaw Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Bearpaw Regular"), url("BEARPAW_.woff") format("woff");
+  src: local("Bearpaw Regular"), url("fonts/BEARPAW_.woff") format("woff");
 }
 :root {
   --color-primary: #413C50;
