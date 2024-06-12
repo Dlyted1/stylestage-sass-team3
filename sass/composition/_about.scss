@@ -47,11 +47,11 @@
         rgba(255, 0, 0, 0) 45%,
         #b3f8f1 45%,
         #b3f8f1 50%,
-        rgba(255, 0, 0, 0) 50%
+        rgba(255, 0, 0, 0) 50% 
       );
       opacity: 0.8;
       content: "";
-      z-index: -1;
+      z-index: -1; 
 
       @media (max-width: 35rem) {
         transform: scale(2) translate(-25%, -25%);
