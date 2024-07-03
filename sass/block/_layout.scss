@@ -75,7 +75,7 @@ article,
 
   }
   
-  @media (min-width: 200px) and (max-width: 600px)  {
+  @media (min-width: 200px) and (max-width: 800px)  {
     main .container {
       --auto-grid-min-size: 20rem; /* Adjusted for smaller screens */
       grid-gap: 1.5rem; /* Reduced gap for smaller screens */   
