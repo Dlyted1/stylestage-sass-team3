@@ -13,28 +13,31 @@
     place-content: center;
     min-height: 12rem;
     padding: 1rem;
-    color: var(--color-light);
+    color: var(--color-background);
     text-align: center;
+    
+   
 
     > span {
       display: grid;
       place-content: center;
       padding: 0.5em;
       grid-gap: 0.5rem;
-      border: 1px solid var(--color-light);
-      background-color: var(--color-secondary);
       line-height: 1.1;
+      
 
+     
       a {
         color: inherit;
         font-size: 1.3rem;
         font-weight: var(--font-weight-strong);
         text-decoration: none;
+        text-align: center;
 
         // stylelint-disable-next-line max-nesting-depth
         &::before {
-          position: absolute;
-          top: 0;
+          position: absolute; /*relative; */
+          top: 40%; /* 0; */
           left: 0;
           width: 100%;
           height: 100%;
@@ -61,21 +64,35 @@
 #styles .features,
 .features.patterned {
   li {
+    
+    /* 
     background-color: var(--color-secondary);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    background-image: url("../../images/grungesign.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @media (min-width: 515px) and (max-width: 765px) {
+    
+
+    @media (min-width: 515px) and (max-width: 762px) {
       &:nth-last-child(1):nth-child(odd) {
         grid-column: span 2;
       }
     }
 
-    &:nth-child(2) {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+   &:nth-child(2) {
+    background-image: url("../../images/grungesign.png");
+    
+    
     }
 
     &:nth-child(3) {
-      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("../../images/grungesign.png");
+      
     }
   }
 
@@ -83,14 +100,15 @@
     position: absolute;
     bottom: -4.5em;
     width: 10ch;
-    padding-top: 3em;
+    padding-top: 4em;
     transform: rotate(-15deg);
     transform-origin: bottom right;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 199.1 111.3'%3E%3Cpath fill='#{svgColor(primary-alt)}' d='M118 77a77 77 0 00-2-18c-2-4-3-9-3-13a29 29 0 011-12 19 19 0 017-9c4-3 8-4 13-3a14 14 0 018 7 31 31 0 012 5 75 75 0 005 10 47 47 0 002 5 17 17 0 003 3c4 4 8 4 13 0a15 15 0 005-8 37 37 0 001-7l1-11a18 18 0 014-11 2 2 0 000-3l-3-3-2-3a2 2 0 011-2 11 11 0 012-1l19-3c4 0 5 1 3 5l-7 16c-1 3-2 3-5 1l-4-5a1 1 0 00-1 0 9 9 0 00-3 5 23 23 0 00-1 6l-1 11a26 26 0 01-1 7 18 18 0 01-8 10c-5 3-9 3-13 0a20 20 0 01-6-6 68 68 0 01-6-13l-2-4a18 18 0 00-2-4 10 10 0 00-14-2 15 15 0 00-4 4 19 19 0 00-3 9 32 32 0 000 11l2 6a78 78 0 012 27 32 32 0 01-4 15 24 24 0 01-11 9 33 33 0 01-19 3 16 16 0 01-13-9 29 29 0 01-3-11 70 70 0 012-18l2-14a33 33 0 000-14c-1-4-4-7-8-7-7-1-14 1-19 6a34 34 0 00-6 9 59 59 0 00-4 10l-3 12-2 6a26 26 0 01-5 8 17 17 0 01-16 6 26 26 0 01-10-4 7 7 0 01-2-1 2 2 0 010-2 2 2 0 012 0l3 1a22 22 0 0010 3 13 13 0 009-4 22 22 0 005-6 41 41 0 003-8l3-12a59 59 0 015-13 31 31 0 017-9c6-5 14-7 22-5a12 12 0 019 7 21 21 0 011 7 57 57 0 01-2 17 132 132 0 00-2 16 37 37 0 000 13 27 27 0 002 5 13 13 0 0011 8 30 30 0 0016-3 22 22 0 0010-10c3-4 3-9 4-13v-5z'/%3E%3C/svg%3E");
+    background-image: url('data:image/svg+xml,%3C%3Fxml version="1.0" encoding="UTF-8" standalone="no"%3F%3E%3Csvg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M56.2098 50.7298L51.3498 45.8698C51.1811 45.7011 50.9577 45.5982 50.7198 45.5798L46.7198 45.2598L40.8198 39.3698C52.1698 27.4698 54.4098 11.3698 54.4998 10.6598C54.5179 10.5085 54.5012 10.3551 54.4509 10.2112C54.4007 10.0674 54.3182 9.93693 54.2098 9.82982C54.1027 9.72144 53.9722 9.63897 53.8284 9.58871C53.6845 9.53845 53.5311 9.52172 53.3798 9.53982C52.6798 9.62982 36.5698 11.8698 24.6698 23.2198L18.7798 17.3198L18.4598 13.3198C18.4414 13.0819 18.3385 12.8585 18.1698 12.6898L13.2698 7.78982C13.0825 7.60356 12.829 7.49902 12.5648 7.49902C12.3006 7.49902 12.0472 7.60356 11.8598 7.78982L7.78982 11.8598C7.60356 12.0472 7.49902 12.3006 7.49902 12.5648C7.49902 12.829 7.60356 13.0825 7.78982 13.2698L12.6498 18.1298C12.8185 18.2985 13.0419 18.4014 13.2798 18.4198L17.2798 18.7398L23.1798 24.6298C11.8298 36.5298 9.58982 52.6298 9.49982 53.3398C9.48122 53.4816 9.49325 53.6258 9.53511 53.7625C9.57697 53.8993 9.64767 54.0255 9.74246 54.1326C9.83724 54.2397 9.95389 54.3252 10.0845 54.3834C10.2152 54.4416 10.3568 54.471 10.4998 54.4698H10.6298C11.3298 54.3798 27.4398 52.1398 39.3398 40.7898L45.2298 46.6898L45.5498 50.6898C45.5682 50.9277 45.6711 51.1511 45.8398 51.3198L50.6998 56.1798C50.8872 56.3661 51.1406 56.4706 51.4048 56.4706C51.669 56.4706 51.9225 56.3661 52.1098 56.1798L56.1798 52.1098C56.3646 51.9236 56.4687 51.6722 56.4698 51.4098C56.4717 51.1585 56.3788 50.9158 56.2098 50.7298V50.7298ZM52.2098 11.7298C51.4198 15.8398 48.3398 28.4298 39.3298 37.9098L36.9998 35.6198C40.2498 31.9398 40.9998 27.4898 38.7598 25.2098C36.5198 22.9298 32.0598 23.7198 28.3798 26.9998L26.0598 24.6698C35.5398 15.6298 48.1298 12.5498 52.2398 11.7598L52.2098 11.7298ZM34.2098 35.5798C31.4198 37.9798 28.0898 38.8098 26.6298 37.3498C25.1698 35.8898 25.9998 32.5898 28.3898 29.7998L34.2098 35.5798ZM29.8098 28.3598C31.3288 26.9258 33.2885 26.0482 35.3698 25.8698C36.1055 25.8354 36.8248 26.0944 37.3698 26.5898C38.8298 28.0498 37.9998 31.3798 35.5998 34.1698L29.8098 28.3598ZM13.8098 16.4198L9.90982 12.5598L12.5598 9.90982L16.4498 13.7998L16.6798 16.6798L13.8098 16.4198ZM11.8098 52.2098C12.5998 48.1098 15.6698 35.5198 24.6898 26.0298L26.9998 28.3798C23.7498 32.0598 22.9998 36.5098 25.2398 38.7898C25.6966 39.227 26.2363 39.5682 26.8272 39.7932C27.418 40.0182 28.048 40.1225 28.6798 40.0998C31.3032 39.9383 33.784 38.8503 35.6798 37.0298L38.0098 39.3598C28.4598 48.3698 15.8598 51.4498 11.7598 52.2398L11.8098 52.2098ZM51.4898 54.0598L47.5498 50.1998L47.3198 47.3198L50.1998 47.5498L54.0898 51.4398L51.4898 54.0598Z" fill="black"/%3E%3C/svg%3E');
     background-repeat: no-repeat;
-    background-size: 90%;
-    color: var(--color-primary-alt);
+    background-size: 70%;
+    color: var(--color-secondary);
     font-size: 0.9rem;
     content: "Grid FTW!";
   }
-}
+ }
+
