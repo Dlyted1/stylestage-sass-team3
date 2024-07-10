@@ -31,7 +31,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
+  /*overflow-x: hidden; keep commented to remove double-scroll bar*/
 }
 
 /* Make images easier to work with */
