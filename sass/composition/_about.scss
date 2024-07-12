@@ -25,7 +25,9 @@
       li {
         margin: 0.25em;
         padding: 0.25em 0.5em;
-        background-color: var(--color-light);
+        color: var(--color-secondary);
+        border-radius: 5px;
+        box-shadow: 0.18em 0.18em var(--color-primary-alt);
       }
     }
 
