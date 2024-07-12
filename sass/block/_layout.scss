@@ -66,35 +66,38 @@ article,
 
 
   main .container {
-  --auto-grid-min-size: 30rem;
+     --auto-grid-min-size: 30rem;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); 
-  grid-gap: 2rem;
-  padding: 25px;
-
-  }
-  
-  @media (min-width: 200px) and (max-width: 800px)  {
-    main .container {
-      --auto-grid-min-size: 20rem; /* Adjusted for smaller screens */
-      grid-gap: 1.5rem; /* Reduced gap for smaller screens */   
-      margin-right: 10px; 
-    }
-  }
-  
-  @media (max-width: 199px) {
-    main .container {
-      --auto-grid-min-size: 10rem; /* Further adjusted for very small screens */
-      grid-gap: 0.5rem; /* Further reduced gap for very small screens */
-      padding: 10px; /* Further reduced padding for very small screens */
-      margin-right: 10px;
-    }
-  }
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); 
+      grid-gap: 2rem;
+      padding: 25px;
+    
+      }
+      
+      @media (min-width: 200px) and (max-width: 800px)  {
+        main .container {
+          --auto-grid-min-size: 20rem; /* Adjusted for smaller screens */
+          grid-gap: 1.5rem; /* Reduced gap for smaller screens */   
+          margin-right: 10px;
+          margin-left: 10px; 
+        }
+      } 
+      
+      @media (max-width: 199px) {
+        main .container {
+          --auto-grid-min-size: 10rem; /* Further adjusted for very small screens */
+          grid-gap: 0.5rem; /* Further reduced gap for very small screens */
+          padding: 10px; /* Further reduced padding for very small screens */
+          margin-right: 5px;
+          margin-left: 5px;
+        }
+      }
 
  section.container {
 
-  background-color: rgba(254, 250, 224, 0.5);
+  background-color: rgba(242,202,172, 0.6);
+ /* rgba(254, 250, 224, 0.5); */
   margin: 1em 0;
   padding: 1em;
   border: 2px solid #4b3a46;
@@ -102,30 +105,7 @@ article,
 
  }
   
- /*
-  article,
-  .page-footer,
-  #styles {
-    .container {
-      @include container(100%, 80ch);
-    }
-  }
-  
-  article,
-  #styles {
-    padding: 1rem;
-  }
-  
-  .page-footer ul,
-  .features {
-    @include flex-container(row);
-    margin: 0 0 2rem;
-    padding: 0;
-    grid-gap: 1em;
-    list-style: none;
-  }
-    */
-    
+        
  .page-footer ul,
 .features {
   display: grid;
