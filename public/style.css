@@ -175,7 +175,7 @@ blockquote {
 
 #about section:nth-child(2) {
   position: relative;
-  /*  &::before {
+    /*  &::before {
      position: absolute;
       top: 60%;
       left: 50%;
@@ -234,7 +234,7 @@ blockquote {
     display: block;
     width: 200px;
     height: 200px;
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='9.5' stroke='%23222222'/%3E%3Ccircle cx='12' cy='12' r='7.5' stroke='%23222222'/%3E%3Cpath d='M4.5 12H6.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M17.5 12H19.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M12 4.5V6.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M12 17.5V19.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M8.54333 8.60832L10.492 13.4801C10.4971 13.4928 10.5072 13.5029 10.5199 13.508L15.3917 15.4567C15.4325 15.473 15.473 15.4325 15.4567 15.3917L13.508 10.5199C13.5029 10.5072 13.4928 10.4971 13.4801 10.492L8.60832 8.54333C8.56751 8.527 8.527 8.56751 8.54333 8.60832Z' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M13 11L11 13' stroke='%2333363F' stroke-linecap='round'/%3E%3C/svg%3E");
+    /*background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='9.5' stroke='%23222222'/%3E%3Ccircle cx='12' cy='12' r='7.5' stroke='%23222222'/%3E%3Cpath d='M4.5 12H6.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M17.5 12H19.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M12 4.5V6.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M12 17.5V19.5' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M8.54333 8.60832L10.492 13.4801C10.4971 13.4928 10.5072 13.5029 10.5199 13.508L15.3917 15.4567C15.4325 15.473 15.473 15.4325 15.4567 15.3917L13.508 10.5199C13.5029 10.5072 13.4928 10.4971 13.4801 10.492L8.60832 8.54333C8.56751 8.527 8.527 8.56751 8.54333 8.60832Z' stroke='%2333363F' stroke-linecap='round'/%3E%3Cpath d='M13 11L11 13' stroke='%2333363F' stroke-linecap='round'/%3E%3C/svg%3E");*/
     background-size: contain;
     background-repeat: no-repeat; }
   @media (max-width: 35rem) {
@@ -304,7 +304,7 @@ blockquote {
   padding-bottom: 100%;
   transform: translate(-50%, -50%);
   transition: 300ms transform ease-in;
-  background-image: radial-gradient(rgba(255, 0, 0, 0) 20%, #b3f8f1 20%, #b3f8f1 25%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 30%, #b3f8f1 30%, #b3f8f1 40%, rgba(255, 0, 0, 0) 40%, rgba(255, 0, 0, 0) 45%, #b3f8f1 45%, #b3f8f1 50%, rgba(255, 0, 0, 0) 50%);
+  /*background-image: radial-gradient(rgba(255, 0, 0, 0) 20%, #b3f8f1 20%, #b3f8f1 25%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 30%, #b3f8f1 30%, #b3f8f1 40%, rgba(255, 0, 0, 0) 40%, rgba(255, 0, 0, 0) 45%, #b3f8f1 45%, #b3f8f1 50%, rgba(255, 0, 0, 0) 50%);*/
   opacity: 0.8;
   content: "";
   z-index: -1; }
@@ -674,6 +674,13 @@ h1 {
   font-size: 8rem;
   line-height: 0.7; }
 
+header h2 {
+  color: #323024; }
+
+header p,
+header a {
+  color: white; }
+
 nav {
   position: fixed;
   width: 100%;
@@ -705,22 +712,16 @@ nav {
     nav ul li {
       margin: 0.25rem; }
 
+@media only screen and (max-width: 700px) {
+  nav {
+    position: unset;
+    background-color: rgba(33, 33, 43, 0.5); } }
 .page-footer {
   --logomark-height: 2em;
   --logomark-padding: 0;
-  position: relative;
-  padding: 3rem 1rem;
-  /* background-image: url("../../images/bootprint.png"); */
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2fbf7' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-position: center -34px;
-  color: var(--color-light);
-  */
-  background-repeat: repeat-x;
-  background-size: contain;
-  width: 100%;
-  height: 75px;
   display: block;
-  padding: 10px; }
+  background-color: #1A1A26;
+  padding-top: 25px; }
   .page-footer::before {
     display: inline-grid;
     min-height: var(--logomark-height);
@@ -737,7 +738,10 @@ nav {
     font-size: 3rem;
     content: "S"; }
   .page-footer p {
-    color: white; }
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center; }
   .page-footer p:first-child {
     margin-top: 3rem;
     font-weight: var(--font-weight-strong);
@@ -746,18 +750,50 @@ nav {
   .page-footer p a {
     color: white; }
   .page-footer ul {
-    grid-template-columns: repeat(auto-fit, minmax(12ch, auto)); }
+    grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
+    margin-left: 15px;
+    margin-right: 15px; }
   .page-footer .container > :last-child {
     margin-bottom: 0; }
+  .page-footer .link-twittercontact::before {
+    content: url(../../images/twitter.svg);
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    padding-top: 2px;
+    fill: currentColor;
+    justify-content: center; }
+  .page-footer .link-github svg {
+    fill: black; }
+  .page-footer .link-rss::before {
+    content: url(../../images/rss.svg);
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    padding-top: 2px;
+    fill: currentColor; }
+  .page-footer .link-support::before {
+    content: url(../../images/subscribe.svg);
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    padding-top: 2px;
+    fill: currentColor; }
   .page-footer::after {
     content: '';
     background-image: url("../../images/bootprint.png");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-size: contain;
-    background-color: #1A1A26;
     width: 100%;
     height: 75px;
-    display: block;
-    padding: 10px; }
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: walk 20s steps(15) infinite; }
+@keyframes walk {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(100%); } }
 
 /*# sourceMappingURL=style.css.map */

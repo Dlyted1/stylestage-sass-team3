@@ -8,16 +8,20 @@ header {
   padding: 10vh 2rem;
   color: var(--color-primary);
   text-align: center;
- 
 }
- 
 
-  h1 {
+h1 {
+  @include logomark;
+  font-family: 'Bearpaw Regular', san-serif;
+  font-size: 8rem;
+  line-height: 0.7;
+}
 
-    @include logomark;
-    font-family: 'Bearpaw Regular', san-serif;
-    font-size: 8rem;
-    line-height: 0.7;
-  }
+header h2 {
+  color: #323024;
+}
 
-  
+header p,
+header a {
+  color: white;
+}
