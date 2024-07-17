@@ -3,17 +3,15 @@
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 
-  /*! 
-    * SVGs from Hero Patterns
-    * @link http://www.heropatterns.com/
-    */
+ 
   li {
     display: grid;
     position: relative;
     place-content: center;
-    min-height: 12rem;
+    min-height: 5rem;
     padding: 1rem;
     color: var(--color-background);
+    text-shadow: 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 20px  rgb(21, 21, 19), 5px 0px 25px  rgb(21, 21, 19);
     text-align: center;
     
    
