@@ -11,17 +11,18 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin */
+/*
+/* Remove default margin 
 body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6   {
   margin: 0;
 }
-
+*/
 /*
 html {
   overflow-x: hidden;
@@ -107,7 +108,8 @@ h2 {
 
 #main h2 {
   background-color: var(--color-secondary);
-  align-self: center;
+  /* align-self: center; */
+  max-height: 82px;
   color: var(--color-background);
   padding: 0.25em 0.5em;
 }
@@ -552,11 +554,34 @@ blockquote::after {
   margin: 1rem auto 10vh;
   padding: 1.25rem;
   z-index: 1;
+  /* @media (min-width: 180ch) {
+     right: 2vmin;
+     bottom: 2vmin;
+     max-width: 30ch;
+     margin-bottom: 0;
+     border-radius: var(--border-radius);
+     background-color: var(--color-light);
+     box-shadow: 0 2px 5px rgba(color(primary), 0.15);
+
+     ul {
+       justify-content: unset;
+
+       li {
+         padding: 0;
+
+         span:nth-child(1) {
+           width: 8ch;
+           margin-right: 0;
+         }
+       }
+     }
+   } */
 }
 .profile h4 {
   margin: 0;
   color: var(--color-secondary);
   text-align: center;
+  color: mintcream;
 }
 .profile .container {
   display: grid;
@@ -566,7 +591,7 @@ blockquote::after {
 .profile .container > a {
   min-height: 2em;
   border: 2px solid currentColor;
-  color: var(--color-secondary);
+  color: mintcream;
 }
 .profile ul {
   display: flex;
@@ -579,6 +604,7 @@ blockquote::after {
 .profile ul li {
   display: flex;
   padding: 0.45em;
+  color: mintcream;
 }
 .profile ul li span:nth-child(1) {
   width: auto;
@@ -591,27 +617,6 @@ blockquote::after {
 }
 .profile ul li span:nth-child(2) a {
   color: inherit;
-}
-@media (min-width: 180ch) {
-  .profile {
-    right: 2vmin;
-    bottom: 2vmin;
-    max-width: 30ch;
-    margin-bottom: 0;
-    border-radius: var(--border-radius);
-    background-color: var(--color-light);
-    box-shadow: 0 2px 5px rgba(65, 60, 80, 0.15);
-  }
-  .profile ul {
-    justify-content: unset;
-  }
-  .profile ul li {
-    padding: 0;
-  }
-  .profile ul li span:nth-child(1) {
-    width: 8ch;
-    margin-right: 0;
-  }
 }
 
 .skip-link {
