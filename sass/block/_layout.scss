@@ -24,7 +24,7 @@ main {
   h2 {
     font-family: 'Bearpaw Regular', san-serif;
     font-size: 55px;
-    max-width: 40ch;
+    
   }
 
   h3 {
@@ -70,24 +70,24 @@ main .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 2rem;
-  padding: 25px;
+  padding: 10px;
 
 }
 
 @media (min-width: 200px) and (max-width: 800px) {
   main .container {
-    --auto-grid-min-size: 20rem;
+    --auto-grid-min-size: 30rem;
     /* Adjusted for smaller screens */
     grid-gap: 1.5rem;
     /* Reduced gap for smaller screens */
-    margin-right: 10px;
-    margin-left: 10px;
+   /*margin-right: 10px;
+    margin-left: 10px; */
   }
 }
 
 @media (max-width: 199px) {
   main .container {
-    --auto-grid-min-size: 10rem;
+    --auto-grid-min-size: 20rem;
     /* Further adjusted for very small screens */
     grid-gap: 0.5rem;
     /* Further reduced gap for very small screens */
@@ -106,6 +106,7 @@ section.container {
   padding: 1em;
   border: 2px solid #4b3a46;
   border-radius: 10px;
+  min-height: 1080px;
 
 }
 
