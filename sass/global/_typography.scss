@@ -22,7 +22,8 @@ h2 {
 
 #main h2 {
   background-color: var(--color-secondary);
-  align-self: center;
+  /*align-self: center;*/
+  max-height: 82px;
   color: var(--color-background);
   padding: 0.25em 0.5em;
 }
@@ -45,19 +46,20 @@ p {
 }
 
 article .container {
-  > ul:not(.features),
-  > ol {
-    > li + li {
+
+  >ul:not(.features),
+  >ol {
+    >li+li {
       margin-top: 1rem;
     }
   }
 
   * {
-    + h2 {
+    +h2 {
       margin-top: 4rem;
     }
 
-    + h3 {
+    +h3 {
       margin-top: 2rem;
     }
   }
@@ -79,7 +81,7 @@ blockquote {
   padding: 0;
   color: var(--color-primary);
 
-  > * {
+  >* {
     grid-area: blockquote;
   }
 
@@ -94,7 +96,7 @@ blockquote {
     }
   }
 
-   &::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 0;

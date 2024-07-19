@@ -24,7 +24,9 @@ main {
   h2 {
     font-family: 'Bearpaw Regular', san-serif;
     font-size: 55px;
-    
+    margin-top: 5px;
+    margin-bottom: 0;
+
   }
 
   h3 {
@@ -80,7 +82,7 @@ main .container {
     /* Adjusted for smaller screens */
     grid-gap: 1.5rem;
     /* Reduced gap for smaller screens */
-   /*margin-right: 10px;
+    /*margin-right: 10px;
     margin-left: 10px; */
   }
 }

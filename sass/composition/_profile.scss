@@ -9,6 +9,7 @@
     margin: 0;
     color: var(--color-secondary);
     text-align: center;
+    color: mintcream;
   }
 
   .container {
@@ -16,10 +17,10 @@
     justify-items: center;
     grid-gap: 1rem;
 
-    > a {
+    >a {
       min-height: 2em;
       border: 2px solid currentColor;
-      color: var(--color-secondary);
+      color: mintcream;
     }
   }
 
@@ -34,6 +35,7 @@
     li {
       display: flex;
       padding: 0.45em;
+      color: mintcream;
 
       span:nth-child(1) {
         width: auto;
@@ -52,7 +54,7 @@
     }
   }
 
-  @media (min-width: 180ch) {
+  /* @media (min-width: 180ch) {
     right: 2vmin;
     bottom: 2vmin;
     max-width: 30ch;
@@ -60,18 +62,15 @@
     border-radius: var(--border-radius);
     background-color: var(--color-light);
     box-shadow: 0 2px 5px rgba(color(primary), 0.15);
-
     ul {
       justify-content: unset;
-
       li {
         padding: 0;
-
         span:nth-child(1) {
           width: 8ch;
           margin-right: 0;
         }
       }
     }
-  }
+  } */
 }
