@@ -24,7 +24,6 @@
   margin: 0.25em;
   padding: 0.25em 0.5em;
   background-color: var(--color-background);
-  /*transform: translate (0, 0);*/
   transition: 180ms all ease-in-out;
 }
 
@@ -94,4 +93,21 @@
   margin-top: 20px;
   /* Adjust spacing between second paragraph and SVG */
   text-align: center;
+}
+
+
+#contribute h3::after {
+  content: "";
+  display: block;
+  width: 400px;
+  /* Adjust size as needed */
+  height: 400px;
+  /* Adjust size as needed */
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctitle%3Ecaravan%3C/title%3E%3Cpath d='M60,51H24a1,1,0,0,1-1-1,5,5,0,0,0-10,0,1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V42A29,29,0,0,1,32,13H54a7,7,0,0,1,7,7V50A1,1,0,0,1,60,51ZM24.93,49H59V20a5,5,0,0,0-5-5H32A27,27,0,0,0,5,42v7h6.07a7,7,0,0,1,13.86,0Z'/%3E%3Cpath d='M18,57a7,7,0,1,1,7-7A7,7,0,0,1,18,57Zm0-12a5,5,0,1,0,5,5A5,5,0,0,0,18,45Z'/%3E%3Cpath d='M41,28H23a4,4,0,0,1,0-8H41a4,4,0,0,1,0,8ZM23,22a2,2,0,0,0,0,4H41a2,2,0,0,0,0-4Z'/%3E%3Cpath d='M57,57H41a1,1,0,0,1-1-1V50a1,1,0,0,1,1-1H57a1,1,0,0,1,1,1v6A1,1,0,0,1,57,57ZM42,55H56V51H42Z'/%3E%3Cpath d='M55,51H43a1,1,0,0,1-1-1V32a1,1,0,0,1,1-1H55a1,1,0,0,1,1,1V50A1,1,0,0,1,55,51ZM44,49H54V33H44Z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
 }

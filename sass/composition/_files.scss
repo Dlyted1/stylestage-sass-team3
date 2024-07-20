@@ -20,6 +20,8 @@
 
     a:not(:last-child) {
       margin: 5px;
+      background-image: url('/images/grungesign.png');
+      background-position: center;
 
       &:not(.link-codepen) {
         font-size: clamp(1rem, 1.5vw, 3rem);

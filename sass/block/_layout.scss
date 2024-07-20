@@ -1,7 +1,4 @@
-// stylelint-disable no-descending-specificity
-
 body {
-  /*  background-color: $color-background; */
   background-image: url(images/mountain2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,7 +6,6 @@ body {
   background-attachment: fixed;
   color: var(--color-text);
   font-family: 'Montserrat', sans-serif;
-
 }
 
 
@@ -35,45 +31,17 @@ main {
 
 }
 
-/*
-
-
-  article {
-    section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: 5vh;
-      padding-bottom: 5vh;
-    }
-  }
-
-article,
-.page-footer,
-#styles {
-  .container {
-    width: 100%;
-    max-width: 80ch;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-article,
-#styles {
-  padding: 1rem;
-}
-*/
-
-
 main .container {
   --auto-grid-min-size: 40rem;
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   padding: 10px;
 
+}
+
+main .container a:hover {
+  color: mintcream;
 }
 
 @media (min-width: 200px) and (max-width: 800px) {
@@ -81,22 +49,29 @@ main .container {
     --auto-grid-min-size: 30rem;
     /* Adjusted for smaller screens */
     grid-gap: 1.5rem;
+
     /* Reduced gap for smaller screens */
-    /*margin-right: 10px;
-    margin-left: 10px; */
+    h2 {
+      font-size: 40px;
+    }
+
   }
 }
 
-@media (max-width: 199px) {
+@media (max-width: 200px) {
   main .container {
     --auto-grid-min-size: 20rem;
     /* Further adjusted for very small screens */
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
     /* Further reduced gap for very small screens */
     padding: 10px;
     /* Further reduced padding for very small screens */
     margin-right: 5px;
     margin-left: 5px;
+  }
+
+  h2 {
+    font-size: 35px;
   }
 }
 
@@ -108,10 +83,9 @@ section.container {
   padding: 1em;
   border: 2px solid #4b3a46;
   border-radius: 10px;
-  min-height: 1080px;
+  min-height: 1075px;
 
 }
-
 
 .page-footer ul,
 .features {

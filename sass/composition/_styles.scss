@@ -3,7 +3,7 @@
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 
- 
+
   li {
     display: grid;
     position: relative;
@@ -11,20 +11,20 @@
     min-height: 5rem;
     padding: 1rem;
     color: var(--color-background);
-    text-shadow: 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 17px  rgb(21, 21, 19), 5px 0px 20px  rgb(21, 21, 19), 5px 0px 25px  rgb(21, 21, 19);
+    text-shadow: 5px 0px 17px rgb(21, 21, 19), 5px 0px 17px rgb(21, 21, 19), 5px 0px 17px rgb(21, 21, 19), 5px 0px 17px rgb(21, 21, 19), 5px 0px 17px rgb(21, 21, 19), 5px 0px 20px rgb(21, 21, 19), 5px 0px 25px rgb(21, 21, 19);
     text-align: center;
-    
-   
 
-    > span {
+
+
+    >span {
       display: grid;
       place-content: center;
       padding: 0.5em;
       grid-gap: 0.5rem;
       line-height: 1.1;
-      
 
-     
+
+
       a {
         color: inherit;
         font-size: 1.3rem;
@@ -34,13 +34,21 @@
 
         // stylelint-disable-next-line max-nesting-depth
         &::before {
-          position: absolute; /*relative; */
-          top: 40%; /* 0; */
+          position: absolute;
+          top: 40%;
           left: 0;
           width: 100%;
           height: 100%;
           content: "";
         }
+      }
+
+      a:hover {
+        color: dimgray
+      }
+
+      span:hover {
+        color: dimgray
       }
 
       span:nth-child(2) {
@@ -62,11 +70,7 @@
 #styles .features,
 .features.patterned {
   li {
-    
-    /* 
-    background-color: var(--color-secondary);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-    background-image: url("../../images/grungesign.png");
+    background-image: url("/images/grungesign.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -74,7 +78,7 @@
     justify-content: center;
     align-items: center;
 
-    
+
 
     @media (min-width: 515px) and (max-width: 762px) {
       &:nth-last-child(1):nth-child(odd) {
@@ -82,15 +86,15 @@
       }
     }
 
-   &:nth-child(2) {
-    background-image: url("../../images/grungesign.png");
-    
-    
+    &:nth-child(2) {
+      background-image: url("/images/grungesign.png");
+
+
     }
 
     &:nth-child(3) {
-      background-image: url("../../images/grungesign.png");
-      
+      background-image: url("/images/grungesign.png");
+
     }
   }
 
@@ -98,6 +102,8 @@
     position: absolute;
     bottom: -4.5em;
     width: 10ch;
+    margin-left: 30px;
+    padding-left: 1em;
     padding-top: 4em;
     transform: rotate(-15deg);
     transform-origin: bottom right;
@@ -108,5 +114,4 @@
     font-size: 0.9rem;
     content: "Grid FTW!";
   }
- }
-
+}
