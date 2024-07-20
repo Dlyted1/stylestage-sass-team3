@@ -43,6 +43,14 @@
         }
       }
 
+        a:hover {
+          color:dimgray
+        }
+
+        span:hover {
+          color:dimgray
+        }
+
       span:nth-child(2) {
         position: relative;
       }
@@ -66,7 +74,7 @@
     /* 
     background-color: var(--color-secondary);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-    background-image: url("../../images/grungesign.png");
+    background-image: url("/images/grungesign.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -83,13 +91,13 @@
     }
 
    &:nth-child(2) {
-    background-image: url("../../images/grungesign.png");
+    background-image: url("/images/grungesign.png");
     
     
     }
 
     &:nth-child(3) {
-      background-image: url("../../images/grungesign.png");
+      background-image: url("/images/grungesign.png");
       
     }
   }
@@ -98,6 +106,8 @@
     position: absolute;
     bottom: -4.5em;
     width: 10ch;
+    margin-left: 30px;
+    padding-left: 1em;
     padding-top: 4em;
     transform: rotate(-15deg);
     transform-origin: bottom right;
