@@ -70,7 +70,7 @@
 #styles .features,
 .features.patterned {
   li {
-    background-image: url("/images/grungesign.png");
+    background-image: url('../../../stylestage-sass-team3/images/grungesign.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -87,13 +87,13 @@
     }
 
     &:nth-child(2) {
-      background-image: url("/images/grungesign.png");
+      background-image: url('../../../stylestage-sass-team3/images/grungesign.png');
 
 
     }
 
     &:nth-child(3) {
-      background-image: url("/images/grungesign.png");
+      background-image: url('../../../stylestage-sass-team3/images/grungesign.png');
 
     }
   }
