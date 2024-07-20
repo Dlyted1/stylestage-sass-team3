@@ -359,7 +359,7 @@ blockquote {
     text-align: center; }
     #files .container a:not(:last-child) {
       margin: 5px;
-      background-image: url("/images/grungesign.png");
+      background-image: url("../../../stylestage-sass-team3/images/grungesign.png");
       background-position: center; }
       #files .container a:not(:last-child):not(.link-codepen) {
         font-size: clamp(1rem, 1.5vw, 3rem); }
@@ -744,7 +744,7 @@ nav {
   .page-footer .container > :last-child {
     margin-bottom: 0; }
   .page-footer .link-twittercontact::before {
-    content: url("/images/twitter.svg");
+    content: url("../../../stylestage-sass-team3/images/twitter.svg");
     width: 25px;
     height: 25px;
     padding-right: 5px;
@@ -754,14 +754,14 @@ nav {
   .page-footer .link-github svg {
     fill: black; }
   .page-footer .link-rss::before {
-    content: url("/images/rss.svg");
+    content: url("../../../stylestage-sass-team3/images/rss.svg");
     width: 25px;
     height: 25px;
     padding-right: 5px;
     padding-top: 2px;
     fill: currentColor; }
   .page-footer .link-support::before {
-    content: url("/images/subscribe.svg");
+    content: url("../../../stylestage-sass-team3/images/subscribe.svg");
     width: 25px;
     height: 25px;
     padding-right: 5px;
@@ -770,7 +770,7 @@ nav {
   .page-footer::after {
     content: '';
     display: inline-block;
-    background-image: url("/images/bootprint.png");
+    background-image: url("../../../stylestage-sass-team3/images/bootprint.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
