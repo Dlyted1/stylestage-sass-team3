@@ -446,7 +446,7 @@ blockquote::after {
 
 #files .container a:not(:last-child) {
         margin: 5px;
-        background-image: url("/images/grungesign.png");
+        background-image: url("../../../stylestage-sass-team3/images/grungesign.png");
         background-position: center;
 }
 
@@ -954,7 +954,7 @@ nav ul li {
 }
 
 .page-footer .link-twittercontact::before {
-        content: url("/images/twitter.svg");
+        content: url("../../../stylestage-sass-team3/images/twitter.svg");
         width: 25px;
         height: 25px;
         padding-right: 5px;
@@ -968,7 +968,7 @@ nav ul li {
 }
 
 .page-footer .link-rss::before {
-        content: url("/images/rss.svg");
+        content: url("../../../stylestage-sass-team3/images/rss.svg");
         width: 25px;
         height: 25px;
         padding-right: 5px;
@@ -977,7 +977,7 @@ nav ul li {
 }
 
 .page-footer .link-support::before {
-        content: url("/images/subscribe.svg");
+        content: url("../../../stylestage-sass-team3/images/subscribe.svg");
         width: 25px;
         height: 25px;
         padding-right: 5px;
@@ -988,7 +988,7 @@ nav ul li {
 .page-footer::after {
         content: '';
         display: inline-block;
-        background-image: url("/images/bootprint.png");
+        background-image: url("../../../stylestage-sass-team3/images/bootprint.png");
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
