@@ -74,6 +74,10 @@ main .container {
 
 }
 
+main .container a:hover {
+  color: mintcream;
+}
+
 @media (min-width: 200px) and (max-width: 800px) {
   main .container {
     --auto-grid-min-size: 30rem;
@@ -82,6 +86,10 @@ main .container {
     /* Reduced gap for smaller screens */
    /*margin-right: 10px;
     margin-left: 10px; */
+    h2 {
+      font-size: 40px;
+    }
+    
   }
 }
 
@@ -96,6 +104,10 @@ main .container {
     margin-right: 5px;
     margin-left: 5px;
   }
+
+  h2 {
+    font-size: 35px;
+  }
 }
 
 section.container {
@@ -109,6 +121,8 @@ section.container {
   min-height: 1080px;
 
 }
+
+
 
 
 .page-footer ul,
