@@ -430,6 +430,22 @@ blockquote::after {
   text-align: center;
 }
 
+#contribute h3::after {
+  content: "";
+  display: block;
+  width: 400px;
+  /* Adjust size as needed */
+  height: 400px;
+  /* Adjust size as needed */
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctitle%3Ecaravan%3C/title%3E%3Cpath d='M60,51H24a1,1,0,0,1-1-1,5,5,0,0,0-10,0,1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V42A29,29,0,0,1,32,13H54a7,7,0,0,1,7,7V50A1,1,0,0,1,60,51ZM24.93,49H59V20a5,5,0,0,0-5-5H32A27,27,0,0,0,5,42v7h6.07a7,7,0,0,1,13.86,0Z'/%3E%3Cpath d='M18,57a7,7,0,1,1,7-7A7,7,0,0,1,18,57Zm0-12a5,5,0,1,0,5,5A5,5,0,0,0,18,45Z'/%3E%3Cpath d='M41,28H23a4,4,0,0,1,0-8H41a4,4,0,0,1,0,8ZM23,22a2,2,0,0,0,0,4H41a2,2,0,0,0,0-4Z'/%3E%3Cpath d='M57,57H41a1,1,0,0,1-1-1V50a1,1,0,0,1,1-1H57a1,1,0,0,1,1,1v6A1,1,0,0,1,57,57ZM42,55H56V51H42Z'/%3E%3Cpath d='M55,51H43a1,1,0,0,1-1-1V32a1,1,0,0,1,1-1H55a1,1,0,0,1,1,1V50A1,1,0,0,1,55,51ZM44,49H54V33H44Z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+}
+
 #files {
   display: grid;
   place-content: center;
@@ -449,6 +465,8 @@ blockquote::after {
 }
 #files .container a:not(:last-child) {
   margin: 5px;
+  background-image: url("/images/grungesign.png");
+  background-position: center;
 }
 #files .container a:not(:last-child):not(.link-codepen) {
   font-size: clamp(1rem, 1.5vw, 3rem);
@@ -516,7 +534,7 @@ blockquote::after {
   /* 
   background-color: var(--color-secondary);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-  background-image: url("../../images/grungesign.png");
+  background-image: url("/images/grungesign.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -532,11 +550,11 @@ blockquote::after {
 }
 #styles .features li:nth-child(2),
 .features.patterned li:nth-child(2) {
-  background-image: url("../../images/grungesign.png");
+  background-image: url("/images/grungesign.png");
 }
 #styles .features li:nth-child(3),
 .features.patterned li:nth-child(3) {
-  background-image: url("../../images/grungesign.png");
+  background-image: url("/images/grungesign.png");
 }
 #styles .features::after,
 .features.patterned::after {
@@ -724,35 +742,6 @@ main h3 {
   color: var(--color-primary);
 }
 
-/*
-
-
-  article {
-    section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: 5vh;
-      padding-bottom: 5vh;
-    }
-  }
-
-article,
-.page-footer,
-#styles {
-  .container {
-    width: 100%;
-    max-width: 80ch;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-article,
-#styles {
-  padding: 1rem;
-}
-*/
 main .container {
   --auto-grid-min-size: 40rem;
   display: grid;
@@ -801,7 +790,7 @@ section.container {
   padding: 1em;
   border: 2px solid #4b3a46;
   border-radius: 10px;
-  min-height: 1080px;
+  min-height: 1075px;
 }
 
 .page-footer ul,
@@ -897,7 +886,8 @@ nav ul li {
   --logomark-padding: 0;
   display: block;
   background-color: #1A1A26;
-  padding-top: 25px;
+  padding-top: 50px;
+  position: relative;
 }
 .page-footer::before {
   display: inline-grid;
@@ -908,12 +898,17 @@ nav ul li {
   place-content: center;
   position: absolute;
   left: 50%;
-  width: 2em;
+  width: 6em;
+  height: 6em;
   transform: translate(-50%, -100%);
   background-color: var(--color-background);
-  color: white;
+  /* color: white;
   font-size: 3rem;
-  content: "S";
+  content: "S"; */
+  content: "";
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg fill='%23000000' width='800px' height='800px' viewBox='0 0 64 64' version='1.1' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Layer_2'/%3E%3Cg id='Layer_3'/%3E%3Cg id='Layer_4'/%3E%3Cg id='Layer_5'/%3E%3Cg id='Layer_6'/%3E%3Cg id='Layer_7'/%3E%3Cg id='Layer_8'/%3E%3Cg id='Layer_9'/%3E%3Cg id='Layer_10'/%3E%3Cg id='Layer_11'/%3E%3Cg id='Layer_12'/%3E%3Cg id='Layer_13'/%3E%3Cg id='Layer_15'/%3E%3Cg id='Layer_16'/%3E%3Cg id='Layer_17'/%3E%3Cg id='Layer_18'/%3E%3Cg id='Layer_19'%3E%3Cg%3E%3Cpath d='M63.9,58.3L45.9,27.3c-0.2-0.3-0.6-0.6-1-0.6c-0.4,0-0.8,0.2-1,0.6l-8,13.9l-4.8-8.3c0-0.1-0.1-0.1-0.1-0.2L24,20.4 c-0.4-0.7-1.5-0.7-1.9,0l-7,12.2c-0.1,0.1-0.2,0.3-0.3,0.4L0.1,58.3c-0.2,0.3-0.2,0.8,0,1.1s0.6,0.6,1,0.6H45h17.9 c0.4,0,0.8-0.2,1-0.6C64,59.1,64,58.7,63.9,58.3z M45,30.1l3.7,6.4l-1.2,1.2l-1.9-1.9c-0.4-0.4-1.1-0.4-1.6,0l-1.8,1.8l-1-1 L45,30.1z M23,23.1l5.8,10l-2.2,2.2l-3.1-3.1c-0.4-0.4-1.1-0.4-1.6,0l-2.8,2.8l-1.9-1.9L23,23.1z M16.1,35.1l2.3,2.3 c0.4,0.4,1.1,0.4,1.6,0l2.8-2.8l3.1,3.1c0.2,0.2,0.5,0.3,0.8,0.3s0.6-0.1,0.8-0.3l2.6-2.6l12.9,22.4l0.2,0.3H3L16.1,35.1z M45.6,57.8l-8.3-14.4l2.8-4.9l1.4,1.4c0.4,0.4,1.1,0.4,1.6,0l1.8-1.8l1.9,1.9c0.2,0.2,0.5,0.3,0.8,0.3s0.6-0.1,0.8-0.3l1.5-1.5 L61,57.8H45.6z'/%3E%3Cpath d='M39.1,16.6c2,0,3.6-1.6,3.6-3.6s-1.6-3.6-3.6-3.6S35.5,11,35.5,13S37.1,16.6,39.1,16.6z M39.1,11.6c0.8,0,1.4,0.6,1.4,1.4 s-0.6,1.4-1.4,1.4s-1.4-0.6-1.4-1.4S38.4,11.6,39.1,11.6z'/%3E%3Cpath d='M39.1,8.1c0.6,0,1.1-0.5,1.1-1.1V5.1c0-0.6-0.5-1.1-1.1-1.1S38,4.5,38,5.1V7C38,7.6,38.5,8.1,39.1,8.1z'/%3E%3Cpath d='M38,19v1.9c0,0.6,0.5,1.1,1.1,1.1s1.1-0.5,1.1-1.1V19c0-0.6-0.5-1.1-1.1-1.1S38,18.4,38,19z'/%3E%3Cpath d='M44,13c0,0.6,0.5,1.1,1.1,1.1H47c0.6,0,1.1-0.5,1.1-1.1c0-0.6-0.5-1.1-1.1-1.1h-1.9C44.5,11.9,44,12.4,44,13z'/%3E%3Cpath d='M31.2,14.1h1.9c0.6,0,1.1-0.5,1.1-1.1c0-0.6-0.5-1.1-1.1-1.1h-1.9c-0.6,0-1.1,0.5-1.1,1.1C30.1,13.6,30.6,14.1,31.2,14.1z '/%3E%3Cpath d='M43.4,9.9c0.3,0,0.6-0.1,0.8-0.3l1.4-1.4c0.4-0.4,0.4-1.1,0-1.6c-0.4-0.4-1.1-0.4-1.6,0L42.6,8c-0.4,0.4-0.4,1.1,0,1.6 C42.8,9.8,43.1,9.9,43.4,9.9z'/%3E%3Cpath d='M34.1,16.5l-1.4,1.4c-0.4,0.4-0.4,1.1,0,1.6c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3l1.4-1.4 c0.4-0.4,0.4-1.1,0-1.6C35.2,16,34.5,16,34.1,16.5z'/%3E%3Cpath d='M42.6,16.5c-0.4,0.4-0.4,1.1,0,1.6l1.4,1.4c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3c0.4-0.4,0.4-1.1,0-1.6 l-1.4-1.4C43.7,16,43,16,42.6,16.5z'/%3E%3Cpath d='M34.1,9.6c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3c0.4-0.4,0.4-1.1,0-1.6l-1.4-1.4c-0.4-0.4-1.1-0.4-1.6,0 c-0.4,0.4-0.4,1.1,0,1.6L34.1,9.6z'/%3E%3C/g%3E%3C/g%3E%3Cg id='Layer_20'/%3E%3Cg id='Layer_21'/%3E%3Cg id='Layer_22'/%3E%3Cg id='Layer_23'/%3E%3Cg id='Layer_24'/%3E%3Cg id='Layer_25'/%3E%3Cg id='Layer_26'/%3E%3Cg id='Layer_27'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .page-footer p {
   color: white;
@@ -939,7 +934,7 @@ nav ul li {
   margin-bottom: 0;
 }
 .page-footer .link-twittercontact::before {
-  content: url(../../images/twitter.svg);
+  content: url("/images/twitter.svg");
   width: 25px;
   height: 25px;
   padding-right: 5px;
@@ -951,7 +946,7 @@ nav ul li {
   fill: black;
 }
 .page-footer .link-rss::before {
-  content: url(../../images/rss.svg);
+  content: url("/images/rss.svg");
   width: 25px;
   height: 25px;
   padding-right: 5px;
@@ -959,7 +954,7 @@ nav ul li {
   fill: currentColor;
 }
 .page-footer .link-support::before {
-  content: url(../../images/subscribe.svg);
+  content: url("/images/subscribe.svg");
   width: 25px;
   height: 25px;
   padding-right: 5px;
@@ -968,9 +963,6 @@ nav ul li {
 }
 .page-footer::after {
   content: "";
-  background-image: url("../../images/bootprint.png");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 100%;
   height: 75px;
   display: inline-block;
